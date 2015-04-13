@@ -3,12 +3,15 @@ Create tabs with an icon and label, using the tabs-positive style.
 Each tab's child <ion-nav-view> directive will have its own
 navigation history that also transitions its views in and out.
 -->
+<script src="path/to/bower_components/mathjs/dist/math.min.js" type="text/javascript"></script>
 <ion-view view-title="Bisection Method">
   <ion-content class="padding">
     <div class="list card">
       <div class="item item-divider">Function</div>
+          <input type="number" ng-model="rpta" placeholder="F(x)=">
+          <button class="button button-outline button-balanced" ng-click="setFunct(rpta)">Evalu</button>
       <div class="item item-body">
-        <h1>HELLO</h1>
+        <h1>{{rptaTtl}}</h1>
       </div>
     </div>
   </ion-content>
