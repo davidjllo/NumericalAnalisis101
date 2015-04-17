@@ -68,6 +68,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+   .state('tab.bisect', {
+      url: '/bisect',
+      views: {
+        'tab-methods': {
+          templateUrl: 'templates/tab-bisect.html',
+          controller: 'BisectionCtrl'
+        }
+      }
+    })
+
   .state('tab.account', {
     url: '/account',
     views: {
